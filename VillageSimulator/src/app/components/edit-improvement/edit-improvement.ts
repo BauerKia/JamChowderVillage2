@@ -8,9 +8,10 @@ To Do:
 
 
 import { Component } from '@angular/core';
+import { Router }        from '@angular/router';
 
 @Component({
-  selector: 'app-edit-improvement',
+  selector: 'edit-improvement',
   imports: [],
   templateUrl: './edit-improvement.html',
   styleUrl: './edit-improvement.css'

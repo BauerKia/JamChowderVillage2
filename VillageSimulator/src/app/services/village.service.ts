@@ -23,10 +23,12 @@ public currentLevel = this.startLevel
   constructor() {
     this.listOfImprovements.push({icon:"" ,type: "House",level: this.currentLevel})
     this.listOfImprovements.push({icon:"" ,type: "Field",level: this.currentLevel})
-    this.listOfImprovements.push({icon:"" ,type: "House",level: this.currentLevel})
-    this.listOfImprovements.push({icon:"" ,type: "House",level: this.currentLevel})
-    this.listOfImprovements.push({icon:"" ,type: "House",level: this.currentLevel})
-    this.listOfImprovements.push({icon:"" ,type: "House",level: this.currentLevel})
-
+    this.listOfImprovements.push({icon:"" ,type: "Pasture",level: this.currentLevel})
+    this.listOfImprovements.push({icon:"" ,type: "Lumber Mill",level: this.currentLevel})
+    this.listOfImprovements.push({icon:"" ,type: "Well",level: this.currentLevel})
     }
+
+    getImprovementList()  : Improvements[] {  // this function returns a StudentInfo array
+         return this.listOfImprovements;
+       }
 }
