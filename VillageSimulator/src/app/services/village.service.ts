@@ -32,3 +32,29 @@ public currentLevel = this.startLevel
          return this.listOfImprovements;
        }
 }
+
+export class VillageResources{
+
+  private initialResources: Record<string, number>  = {
+      "Villagers": 0,
+      "Sheep": 0,
+      "Crops": 0,
+      "Trees": 0,
+
+  }
+
+  setNewResourceSet(newSet: any){
+    this.initialResources = newSet
+  }
+
+  takeResource(resourceName: any, amount: any){
+    
+    if (resourceName.type !== String){
+      console.warn("Resource Was not a String")
+      return
+    }
+
+    this.initialResources[resourceName] -= amount
+  }
+
+}
