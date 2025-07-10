@@ -1,3 +1,28 @@
 #pageHeading { /* apply styling to id="pageHeading" */
     text-align: center;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  max-width: 500px;
+  max-height: 500px;
+  margin: auto;
+}
+
+.grid-item {
+    width: 100px;
+    height: 100px;
+
+    background: blanchedalmond;
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: ease-in 0.3s;
+}
+
+.grid-item:hover {
+    background: gray;
+}
