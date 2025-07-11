@@ -7,14 +7,16 @@
  */
 
 import { Component } from '@angular/core';
+import { CommonModule }   from '@angular/common';
 
 @Component({
   selector: 'resource-line',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './resource-line.html',
   styleUrl: './resource-line.css'
 })
 export class ResourceLine {
+
 
 }
 

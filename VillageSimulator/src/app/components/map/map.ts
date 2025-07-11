@@ -23,12 +23,14 @@
 import { Component } from '@angular/core';
 //import {MatGridListModule} from '@angular/material/grid-list';
 import { Router }        from '@angular/router';
+import { Tile } from "../tile/tile";
 @Component({
   selector: 'map',
-  imports: [],
+  imports: [Tile],
   templateUrl: './map.html',
   styleUrl: './map.css'
 })
 export class Map {
+   gridAmt = Array(25)
 
 }

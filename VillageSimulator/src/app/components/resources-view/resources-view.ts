@@ -10,10 +10,11 @@ To Do:
  **/
 
 import { Component } from '@angular/core';
+import { ResourceLine } from "../resource-line/resource-line";
 
 @Component({
   selector: 'resources-view',
-  imports: [],
+  imports: [ResourceLine],
   templateUrl: './resources-view.html',
   styleUrl: './resources-view.css'
 })

@@ -1,9 +1,24 @@
 <p>resource-line works!</p>
 <div>
-     <ng-container *ngFor="let item of gridItems" >
-            <img *ngIf="item.type" src="'assets/images/ + item.type" >
-     </ng-container>
- 
+     <table>
+<tr>
+
+    <b> <th>Resources</th></b>
+     <b> <th>Available</th></b>
+   
+</tr>
+<tr *ngFor="let item of gridItems">
+<td id="userRSS">
+     <img *ngIf="item.type" src="'assets/images/ + item.type + '.png'" 
+     <span *ngIf=" "item.name" class="rss-name">
+     {{item.name}}
+     </span>
+</td>
+</tr>
+            
+          
+
+     </table>
 
 </div>
 
