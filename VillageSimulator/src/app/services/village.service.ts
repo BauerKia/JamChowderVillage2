@@ -8,6 +8,8 @@
 
 import { Injectable } from '@angular/core';
 import { Improvements } from '../interfaces/improvements';
+import { Resources } from '../interfaces/resources';
+
 
 @Injectable({
   providedIn: 'root'
@@ -16,6 +18,7 @@ import { Improvements } from '../interfaces/improvements';
 export class VillageService {
 
 private listOfImprovements : Improvements[] = []
+private baseResources : Resources[] = []
 private startLevel = 1
 //Check this just in case
 public currentLevel = this.startLevel
@@ -26,10 +29,21 @@ public currentLevel = this.startLevel
     this.listOfImprovements.push({icon:"Pasture.png" ,type: "Pasture",level: this.currentLevel})
     this.listOfImprovements.push({icon:"Lumber.png" ,type: "Lumber Mill",level: this.currentLevel})
     this.listOfImprovements.push({icon:"Well.png" ,type: "Well",level: this.currentLevel})
+
+    this.baseResources.push({name:"People",icon: "", amt: 0 })
+    this.baseResources.push({name:"Grain",icon: "", amt: 5 })
+    this.baseResources.push({name:"Sheep",icon: "", amt: 1 })
+    this.baseResources.push({name:"Lumber",icon: "",  amt: 5 })
+    this.baseResources.push({name:"Water",icon: "", amt: 5 })
+
     }
 
     getImprovementList()  : Improvements[] {  // this function returns a StudentInfo array
          return this.listOfImprovements;
+       }
+
+       getBaseResources()  : Resources[] {  // this function returns a StudentInfo array
+         return this.baseResources;
        }
 }
 

@@ -1,4 +1,4 @@
-<!-- nav-bar is an Angular component                       -->
+  <!-- nav-bar is an Angular component                       -->
 <!-- we want include the navigation bar with the URL paths -->
 <nav-bar></nav-bar>
 <!-- router-outlet tells Angular we want to it's router    -->
@@ -10,8 +10,10 @@
 <div class="grid-container">
     <ng-container *ngFor="let item of gridItems" >
         <div class="grid-item" (click)="onGridItemClick(item)">
+            <!-- *ngIf icon null then route to addimprovement-->
+             <!-- *ngIf icon is not null && is linked to speicific rss then route to editimprovement-->
             {{ item.name }}
 
         </div>
     </ng-container>    
-</div>   
+</div> 

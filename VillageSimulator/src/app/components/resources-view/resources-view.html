@@ -1,4 +1,6 @@
 <p>resources-view works!</p>
-<div>
-    <resource-line></resource-line>
-</div>
+<h2>Current Resources</h2>
+
+
+    <!--  Take the elements of currentRss and assign the rss to the variable-->
+<resource-line *ngFor="let rss of currentRss" [resource]="rss"></resource-line>

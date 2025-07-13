@@ -11,13 +11,25 @@ To Do:
 
 import { Component } from '@angular/core';
 import { ResourceLine } from "../resource-line/resource-line";
+import { VillageService } from '../../services/village.service';
+import { CommonModule }   from '@angular/common';
+import { Resources } from '../../interfaces/resources';
+
 
 @Component({
   selector: 'resources-view',
-  imports: [ResourceLine],
+  imports: [CommonModule, ResourceLine],
   templateUrl: './resources-view.html',
   styleUrl: './resources-view.css'
 })
 export class ResourcesView {
+
+
+  public currentRss : Resources [] ;
+  
+  constructor(private villageService : VillageService){
+  this.currentRss = villageService.getBaseResources();
+  
+  }
 
 }
