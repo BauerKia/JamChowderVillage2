@@ -1,4 +1,17 @@
 <p>map works!</p>
+<div class="grid-container">
+    <ng-container *ngFor="let item of gridItems" >
+        <div class="grid-item" (click)="onGridItemClick(item)">
+            <!-- *ngIf icon null then route to addimprovement-->
+             <!-- *ngIf icon is not null && is linked to speicific rss then route to editimprovement-->
+            {{ item.name }}
+
+        </div>
+    </ng-container>    
+</div> 
+
+
+
 <!-- For loop to add grid types? -->
 <!--<mat-grid-list cols="5" rowHeight="5:1">-->
 <!--  &lt;!&ndash; Need to access improvements icon property &ndash;&gt;-->

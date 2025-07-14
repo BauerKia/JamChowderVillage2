@@ -12,10 +12,12 @@ import { Component } from '@angular/core';
 import { Router }        from '@angular/router';
 import { Improvements } from '../../interfaces/improvements';
 import { VillageService } from '../../services/village.service';
+import { CommonModule }   from '@angular/common';
+
 
 @Component({
   selector: 'add-improvement',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './add-improvement.html',
   styleUrl: './add-improvement.css'
 })

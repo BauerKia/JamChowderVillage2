@@ -23,6 +23,7 @@ export class ResourceLine {
 // Like its okay, there will be something being inputed
   @Input()
   resource!: Resources;
+  @Input()
   improvement!: Improvements;
 
 
