@@ -1,13 +1,12 @@
 <p>map works!</p>
 <div class="grid-container">
-    <ng-container *ngFor="let item of gridItems" >
-        <div class="grid-item" (click)="onGridItemClick(item)">
-            <!-- *ngIf icon null then route to addimprovement-->
-             <!-- *ngIf icon is not null && is linked to speicific rss then route to editimprovement-->
-            {{ item.name }}
-
-        </div>
-    </ng-container>    
+    <table >
+        <tr *ngFor="let row of mapList; let i = index">
+       <td *ngFor="let tile of mapList; let j = index">
+        <tile [plotIDX]="'plot -' + ' x' + j + ' y' + i"></tile>
+       </td>
+       </tr>
+    </table>    
 </div> 
 
 

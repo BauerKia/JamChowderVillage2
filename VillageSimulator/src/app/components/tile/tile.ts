@@ -13,7 +13,7 @@
     
  */
 
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'tile',
@@ -23,5 +23,9 @@ import { Component } from '@angular/core';
 })
 export class Tile {
 
+  @Input()
+  plotIDX!: string
+   @Input()
+  plotIDY!: string
 }
 // stackoverflow.com/questions/41458842/attaching-click-to-anchor-tag-in-angular

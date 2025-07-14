@@ -33,40 +33,26 @@ import { CommonModule }   from '@angular/common';
   styleUrl: './map.css'
 })
 export class Map {
-   
+   //https://stackoverflow.com/questions/69730632/how-to-render-multiple-component-type-variables-through-a-template
 
-   protected title = 'VillageSimulator';
+   mapList: Tile [][] = defaultMap() ;
+  
+constructor(){}
+  
 
-  gridItems = [
-    { name: 'Item 1'},
-    { name: 'Item 2'},
-    { name: 'Item 3'},
-    { name: 'Item 4'},
-    { name: 'Item 5'},
-    { name: 'Item 6'},
-    { name: 'Item 7'},
-    { name: 'Item 8'},
-    { name: 'Item 9'},
-    { name: 'Item 10'},
-    { name: 'Item 11'},
-    { name: 'Item 12'},
-    { name: 'Item 13'},
-    { name: 'Item 14'},
-    { name: 'Item 15'},
-    { name: 'Item 16'},
-    { name: 'Item 17'},
-    { name: 'Item 18'},
-    { name: 'Item 19'},
-    { name: 'Item 20'},
-    { name: 'Item 21'},
-    { name: 'Item 22'},
-    { name: 'Item 23'},
-    { name: 'Item 24'},
-    { name: 'Item 25'}
-  ];
+//   onGridItemClick(item: any) {
+//     console.log('Grid item clicked:', item.name);
+//   }
 
-  onGridItemClick(item: any) {
-    console.log('Grid item clicked:', item.name);
-  }
+}
 
+function defaultMap(){
+   let map: Tile[] [] = [];
+   for(var i = 0; i < 5; i++){
+      map[i] = [];
+      for(var j = 0; j < 5; j++){
+         map[i][j] = new Tile();
+      }
+   }
+ return map;
 }

@@ -3,4 +3,20 @@
 
 
     <!--  Take the elements of currentRss and assign the rss to the variable-->
-<resource-line *ngFor="let rss of currentRss" [resource]="rss"></resource-line>
+      <table>
+        <tr>
+            <th>
+                <b>Resource</b>
+            </th>
+             <th>
+                <b>Available</b>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <resource-line *ngFor="let rss of currentRss" [resource]="rss"></resource-line>
+            </td>
+        </tr>
+      </table>
+
+

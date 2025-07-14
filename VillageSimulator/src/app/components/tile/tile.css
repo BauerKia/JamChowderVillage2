@@ -1,4 +1,14 @@
+.tile{
+    width: 100px;
+    height: 100px;
 
+    background: blanchedalmond;
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: ease-in 0.3s;
+}
 
 .tile:hover{
     transform: translateY(-10px);
