@@ -24,17 +24,17 @@ private startLevel = 1
 public currentLevel = this.startLevel
 
   constructor() {
-    this.listOfImprovements.push({icon:"House.png" ,type:"House",level: this.currentLevel})
-    this.listOfImprovements.push({icon:"Field.png" ,type: "Field",level: this.currentLevel})
-    this.listOfImprovements.push({icon:"Pasture.png" ,type: "Pasture",level: this.currentLevel})
-    this.listOfImprovements.push({icon:"Lumber.png" ,type: "Lumber Mill",level: this.currentLevel})
-    this.listOfImprovements.push({icon:"Well.png" ,type: "Well",level: this.currentLevel})
+    this.listOfImprovements.push({icon:"images/House.png" ,type:"House",level: this.currentLevel})
+    this.listOfImprovements.push({icon:"images/Field.png" ,type: "Field",level: this.currentLevel})
+    this.listOfImprovements.push({icon:"images/Pasture.png" ,type: "Pasture",level: this.currentLevel})
+    this.listOfImprovements.push({icon:"images/Lumber Mill.png" ,type: "Lumber Mill",level: this.currentLevel})
+    this.listOfImprovements.push({icon:"images/Well.png" ,type: "Well",level: this.currentLevel})
 
-    this.baseResources.push({name:"People",icon: "", amt: 0 })
-    this.baseResources.push({name:"Grain",icon: "", amt: 5 })
-    this.baseResources.push({name:"Sheep",icon: "", amt: 1 })
-    this.baseResources.push({name:"Lumber",icon: "",  amt: 5 })
-    this.baseResources.push({name:"Water",icon: "", amt: 5 })
+    this.baseResources.push({name:"People",icon: "images/House.png", amt: 0 })
+    this.baseResources.push({name:"Grain",icon: "images/Field.png", amt: 5 })
+    this.baseResources.push({name:"Sheep",icon: "images/Pasture.png", amt: 1 })
+    this.baseResources.push({name:"Lumber",icon: "images/Lumber Mill.png",  amt: 5 })
+    this.baseResources.push({name:"Water",icon: "images/Well.png", amt: 5 })
 
     }
 
